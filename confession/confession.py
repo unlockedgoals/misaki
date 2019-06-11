@@ -102,7 +102,7 @@ class Confession(BaseCog):
                 confession_room = channel
 
         try:
-            await confession_room.maybe_send_embed(confession)
+            await confession_room.send_embed(confession)
         except:
             return await ctx.author.send("I don't have permission to this room or something went wrong")
 
