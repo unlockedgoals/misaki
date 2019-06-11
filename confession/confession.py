@@ -39,8 +39,7 @@ class Confession(BaseCog):
 
     @commands.command()
     async def confess(self, ctx, *, confession):
-        """Confess your dirty sins
-        It'll ask you which guild to confess in if you have more than one with a confession
+        """Spill some tea. Go ahead. We might not judge.
         """
 
         async def select_guild(ctx: commands.Context, pages: list, controls: dict, message: discord.Message, page: int, timeout: float, emoji: str):
@@ -70,7 +69,8 @@ class Confession(BaseCog):
         if len(user_guilds) == 0:
             await ctx.author.send("No server with a confession room, ask your server owners to set it up!")
         if len(user_guilds) == 1:
-            await self.send_confession_embed(ctx, user_guilds[0], confession)
+            await self.send_confession(ctx, user_guilds[0], confession)
+             embed = discord.Embed(color=0xEE2222, title='New Embed')
             
         else:
             SELECT_DOMAIN = {"\N{WHITE HEAVY CHECK MARK}": select_guild}
