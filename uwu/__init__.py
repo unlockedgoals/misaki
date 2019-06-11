@@ -1,6 +1,6 @@
-from .roleplay import Roleplay
+from .uwu import uwu
 
 
 def setup(bot):
-    n = Roleplay()
+    n = uwu()
     bot.add_cog(n)
