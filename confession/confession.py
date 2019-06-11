@@ -70,7 +70,6 @@ class Confession(BaseCog):
             await ctx.author.send("No server with a confession room, ask your server owners to set it up!")
         if len(user_guilds) == 1:
             await self.send_confession(ctx, user_guilds[0], confession)
-             embed = discord.Embed(color=0xEE2222, title='New Embed')
             
         else:
             SELECT_DOMAIN = {"\N{WHITE HEAVY CHECK MARK}": select_guild}
@@ -103,7 +102,7 @@ class Confession(BaseCog):
                 confession_room = channel
 
         try:
-            await confession_room.send(confession)
+            await confession_room.maybe_send_embed(confession)
         except:
             return await ctx.author.send("I don't have permission to this room or something went wrong")
 
