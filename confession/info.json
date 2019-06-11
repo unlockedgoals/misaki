@@ -1,0 +1,9 @@
+{
+  "author" : ["Jakee"],
+  "bot_version": [3,0,0],
+  "install_msg" : "Throwing shade has never been so fun.!",
+  "short" : "Confess secretly.",
+  "description" : "Spill some tea and ruin some lives.",
+  "tags" : ["confession", "crime", "secret"],
+  "hidden" : false
+}
