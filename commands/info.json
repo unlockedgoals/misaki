@@ -1,0 +1,9 @@
+{
+  "author" : ["Jakee"],
+  "bot_version": [3,0,0],
+  "install_msg" : "Commands for embeds!",
+  "short" : "Embeds.",
+  "description" : "Embeds",
+  "tags" : ["embeds"],
+  "hidden" : false
+}
