@@ -26,7 +26,7 @@ class Hunting(commands.Cog):
             "penguin": ":penguin: **_Noot!_**",
             "chicken": ":chicken: **_Bah-gawk!_**",
             "duck": ":duck: **_Quack!_**",
-            "bunny": ":rabbit2: **_Nose wiggle!_**
+            "bunny": ":rabbit2: **_Nose-wiggle!_**
         }
         self.in_game = []
         self.paused_games = []
