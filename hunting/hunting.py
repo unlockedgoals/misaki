@@ -26,7 +26,6 @@ class Hunting(commands.Cog):
             "penguin": ":penguin: **_Noot!_**",
             "chicken": ":chicken: **_Bah-gawk!_**",
             "duck": ":duck: **_Quack!_**",
-            "bunny": ":rabbit2: **_Nose-wiggle!_**
         }
         self.in_game = []
         self.paused_games = []
@@ -91,7 +90,7 @@ class Hunting(commands.Cog):
         pound_len = len(str(len(sorted_acc)))
         score_len = 10
         header = "{score:{score_len}}{name:2}\n".format(
-            score="# Birds Shot",
+            score="# Animals Captured",
             score_len=score_len + 5,
             name="Name"
             if not str(ctx.author.mobile_status) in ["online", "idle", "dnd"]
